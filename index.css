@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-pitch: #050507;
+    --bg-surface: #0A0B0E;
+    --bg-card: #101217;
+    --bg-card-hover: #151821;
+    --border-subtle: #1C1F28;
+    --border-highlight: #2A2F3D;
+    
+    --primary-red: #E50914;
+    --primary-red-hover: #FF1A24;
+    --primary-red-deep: #A0070E;
+    
+    --text-white: #FFFFFF;
+    --text-silver: #F0F1F5;
+    --text-muted: #8E93A3;
+    --text-dark-muted: #585D6E;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #050507;
+    color: #F0F1F5;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Barlow Condensed', 'Oswald', sans-serif;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+  }
+}
+
+/* Elite Sports Athletic Typography Utilities */
+.font-teko {
+  font-family: 'Teko', 'Barlow Condensed', sans-serif;
+}
+
+.font-condensed {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.font-oswald {
+  font-family: 'Oswald', 'Barlow Condensed', sans-serif;
+}
+
+/* Subtle Cinematic Lighting & Shadows */
+.spotlight-red {
+  background: radial-gradient(circle at 50% 0%, rgba(229, 9, 20, 0.16) 0%, transparent 70%);
+}
+
+.spotlight-stadium {
+  background: radial-gradient(ellipse at 50% -20%, rgba(255, 255, 255, 0.08) 0%, rgba(229, 9, 20, 0.1) 40%, transparent 80%);
+}
+
+.red-glow {
+  box-shadow: 0 0 35px -5px rgba(229, 9, 20, 0.35);
+}
+
+.red-glow-sm {
+  box-shadow: 0 0 16px -2px rgba(229, 9, 20, 0.25);
+}
+
+.red-laser-line {
+  background: linear-gradient(90deg, transparent, #E50914 50%, transparent);
+}
+
+/* Metallic Rim Light for Premium Football Cards */
+.card-rim {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08), 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+}
+
+.card-rim-hover:hover {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), 0 20px 40px -15px rgba(229, 9, 20, 0.22);
+}
+
+/* Subtle Sports Texture (diagonal apparel micro-stripes) */
+.bg-carbon-mesh {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.015) 0,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 0,
+    transparent 8px
+  );
+}
+
+.bg-pitch-stripes {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(14, 26, 20, 0.4) 0,
+    rgba(14, 26, 20, 0.4) 30px,
+    rgba(10, 18, 14, 0.4) 30px,
+    rgba(10, 18, 14, 0.4) 60px
+  );
+}
+
+/* Authentic Athletic Chamfer Cuts */
+.clip-chamfer {
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+
+.clip-skew-btn {
+  transform: skewX(-10deg);
+}
+
+.clip-skew-content {
+  transform: skewX(10deg);
+}
+
+.clip-badge {
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+}
+
+.clip-tag {
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+}
+
+/* Glass effect */
+.glass-carbon {
+  background: rgba(10, 11, 14, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #060709;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F222B;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E50914;
+}

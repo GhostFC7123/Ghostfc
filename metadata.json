@@ -1,0 +1,6 @@
+{
+  "name": "GHOST FC - Official Football Club & Management Portal",
+  "description": "Official club website and management system for GHOST FC. Discover the squad, match center, starting XI, player highlights, and manage club operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
